@@ -1,6 +1,13 @@
 import {Component} from "@angular/core";
 import type {Engine} from "tsparticles-engine";
-import {ClickMode, HoverMode, MoveDirection, OutMode} from "tsparticles-engine";
+import {
+    AnimationMode,
+    DestroyType,
+    MoveDirection,
+    OutMode,
+    PixelMode,
+    StartValueType
+} from "tsparticles-engine";
 import {loadSlim} from "tsparticles-slim";
 
 @Component({
@@ -9,82 +16,144 @@ import {loadSlim} from "tsparticles-slim";
     styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-    title = "strangelookingnerd";
     id = "strangelookingnerd";
-
     particlesOptions = {
         background: {
             color: {
-                value: "#000000",
+                value: "#000"
             },
-            opacity: 1,
-
-            image: "url('/assets/background.jpg')"
+            opacity: 1
         },
+        detectRetina: true,
         fpsLimit: 120,
-        interactivity: {
-            events: {
-                onClick: {
-                    enable: true,
-                    mode: ClickMode.push,
-                },
-                onHover: {
-                    enable: true,
-                    mode: HoverMode.repulse,
-                },
-                resize: true,
-            },
-            modes: {
-                push: {
-                    quantity: 4,
-                },
-                repulse: {
-                    distance: 150,
-                    duration: 0.4,
-                },
-            },
-        },
         particles: {
             color: {
-                value: "#ffffff",
-            },
-            links: {
-                color: "#ffffff",
-                distance: 150,
-                enable: true,
-                opacity: 0.5,
-                width: 1,
+                value: "random",
+                animation: {
+                    h: {
+                        count: 0,
+                        enable: true,
+                        offset: 0,
+                        speed: 50,
+                        delay: 0,
+                        decay: 0,
+                        sync: false
+                    }
+                }
             },
             move: {
+                angle: {
+                    offset: 0,
+                    value: 90
+                },
+                center: {
+                    x: 50,
+                    y: 50,
+                    mode: PixelMode.percent,
+                    radius: 0
+                },
+                decay: 0,
                 direction: MoveDirection.none,
+                drift: 0,
                 enable: true,
                 outModes: {
-                    default: OutMode.bounce,
+                    default: OutMode.out,
+                    bottom: OutMode.out,
+                    left: OutMode.out,
+                    right: OutMode.out,
+                    top: OutMode.out
                 },
                 random: false,
-                speed: 3,
+                size: false,
+                speed: 2,
                 straight: false,
+                vibrate: false,
+                warp: false
             },
             number: {
                 density: {
                     enable: true,
-                    area: 800,
+                    width: 1920,
+                    height: 1080
                 },
-                value: 80,
+                limit: 0,
+                value: 100
             },
             opacity: {
-                value: 0.5,
+                random: {
+                    enable: true,
+                    minimumValue: 0.5
+                },
+                value: {
+                    min: 0.5,
+                    max: 1.0
+                },
+                animation: {
+                    count: 0,
+                    enable: true,
+                    speed: 0.5,
+                    decay: 0,
+                    delay: 0,
+                    sync: false,
+                    mode: AnimationMode.auto,
+                    startValue: StartValueType.random,
+                    destroy: DestroyType.none,
+                    minimumValue: 0.3
+                }
             },
+            reduceDuplicates: false,
             shape: {
-                type: "circle",
+                close: true,
+                fill: true,
+                type: "circle"
             },
             size: {
-                value: {min: 1, max: 5},
+                random: {
+                    enable: true,
+                    minimumValue: 3
+                },
+                value: {
+                    min: 3,
+                    max: 5
+                },
+                animation: {
+                    count: 0,
+                    enable: true,
+                    speed: 3,
+                    decay: 0,
+                    delay: 0,
+                    sync: false,
+                    mode: AnimationMode.auto,
+                    startValue: StartValueType.random,
+                    destroy: DestroyType.none,
+                    minimumValue: 1
+                }
             },
+            links: {
+                blink: false,
+                color: {
+                    value: "random"
+                },
+                consent: false,
+                distance: 200,
+                enable: true,
+                frequency: 1,
+                opacity: 0.5,
+                width: 2,
+                warp: false
+            }
         },
-        detectRetina: true,
+        pauseOnBlur: true,
+        pauseOnOutsideViewport: true,
+        smooth: true,
+        motion: {
+            disable: false,
+            reduce: {
+                factor: 4,
+                value: true
+            }
+        }
     };
-
 
     async particlesInit(engine: Engine): Promise<void> {
         await loadSlim(engine);
