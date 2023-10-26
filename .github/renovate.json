@@ -10,5 +10,6 @@
   ],
   "labels": [
     "dependencies"
-  ]
+  ],
+  "rebaseWhen": "conflicted"
 }
