@@ -1,0 +1,29 @@
+.hover-area {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 3s;
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.hover-area:hover {
+    opacity: 1;
+    transition: opacity 3s;
+}
+
+.hover-area:not(:hover) {
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.hover-area a {
+    cursor: help;
+}
+
