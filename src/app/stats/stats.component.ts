@@ -9,7 +9,7 @@ export class StatsComponent {
 
     fadeInStats() {
         let stats = document.getElementById('github-stats');
-        if(stats != null) {
+        if (stats != null) {
             let currentOpacity = window.getComputedStyle(stats, null).getPropertyValue('opacity');
             stats.classList.remove('fade-out');
             stats.style.opacity = currentOpacity;
@@ -19,7 +19,7 @@ export class StatsComponent {
 
     fadeOutStats() {
         let stats = document.getElementById('github-stats');
-        if(stats != null) {
+        if (stats != null) {
             let currentOpacity = window.getComputedStyle(stats, null).getPropertyValue('opacity');
             stats.classList.remove('fade-in')
             stats.style.opacity = currentOpacity;
