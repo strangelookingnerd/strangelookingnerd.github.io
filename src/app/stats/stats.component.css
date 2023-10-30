@@ -1,0 +1,55 @@
+.github-icon {
+    position: absolute;
+    display: inline-block;
+    cursor: help;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 3s;
+    z-index: 2;
+}
+
+.github-icon:hover {
+    opacity: 1;
+    transition: opacity 3s ease 500ms;
+}
+
+.github-icon:not(:hover) {
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+.github-stats {
+    position: absolute;
+    display: inline-block;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: 1;
+}
+
+.github-stats.fade-in {
+    animation: fadeIn 2s ease 1s forwards;
+}
+
+.github-stats.fade-out {
+    animation: fadeOut 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    100% { opacity: 0.9; }
+}
+@keyframes fadeOut {
+    100% { opacity: 0; }
+}
+
+
+
+

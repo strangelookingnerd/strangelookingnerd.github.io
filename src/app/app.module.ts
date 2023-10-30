@@ -4,10 +4,10 @@ import {NgParticlesModule} from 'ng-particles';
 
 import {AppComponent} from './app.component';
 import {ParticlesComponent} from './particles/particles.component';
-import {LinksComponent} from './links/links.component';
+import {StatsComponent} from './stats/stats.component';
 
 @NgModule({
-    declarations: [AppComponent, ParticlesComponent, LinksComponent],
+    declarations: [AppComponent, ParticlesComponent, StatsComponent],
     imports: [
         BrowserModule,
         NgParticlesModule
