@@ -6,25 +6,32 @@ import {Component} from '@angular/core';
     styleUrls: ['./stats.component.css'],
 })
 export class StatsComponent {
-
     fadeInStats() {
-        let stats = document.getElementById('github-stats');
-        if (stats != null) {
-            let currentOpacity = window.getComputedStyle(stats, null).getPropertyValue('opacity');
-            stats.classList.remove('fade-out');
-            stats.style.opacity = currentOpacity;
-            stats.classList.add('fade-in')
-        }
+        this.fade(true);
     }
 
     fadeOutStats() {
+        this.fade(false);
+    }
+
+    private fade(fadeIn: boolean) {
         let stats = document.getElementById('github-stats');
         if (stats != null) {
             let currentOpacity = window.getComputedStyle(stats, null).getPropertyValue('opacity');
-            stats.classList.remove('fade-in')
+            stats.classList.remove(fadeIn ? 'fade-out' : 'fade-in')
             stats.style.opacity = currentOpacity;
-            stats.classList.add('fade-out');
+            stats.classList.add(fadeIn ? 'fade-in' : 'fade-out');
+        }
 
+        let icon = document.getElementById('github-icon');
+        if (icon != null) {
+            if (fadeIn) {
+                icon.setAttribute('href', 'https://github.com/strangelookingnerd');
+                icon.setAttribute('target', '_blank');
+            } else {
+                icon.removeAttribute('href');
+                icon.removeAttribute('target');
+            }
         }
     }
 }
