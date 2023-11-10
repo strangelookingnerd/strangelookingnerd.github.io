@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "strangelookingnerd:build:production"
+              "buildTarget": "strangelookingnerd:build:production"
             },
             "development": {
-              "browserTarget": "strangelookingnerd:build:development"
+              "buildTarget": "strangelookingnerd:build:development"
             }
           },
           "defaultConfiguration": "development"
