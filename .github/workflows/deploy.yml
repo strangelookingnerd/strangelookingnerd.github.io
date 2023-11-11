@@ -1,5 +1,10 @@
 name: deploy
 on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - build
+    types: [ completed ]
   push:
     branches:
       - main
