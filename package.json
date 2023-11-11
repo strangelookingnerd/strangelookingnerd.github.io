@@ -6,7 +6,8 @@
     "start": "ng serve -o",
     "build": "ng build",
     "build:ci": "ng build",
-    "watch": "ng build --watch"
+    "watch": "ng build --watch",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -21,13 +22,21 @@
     "ng-particles": "^3.12.0",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.1",
-    "tsparticles": "^2.12.0"
+    "tsparticles": "^2.12.0",
+    "zone.js": "~0.14.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~17.0.0",
     "@angular/cli": "~17.0.0",
     "@angular/compiler-cli": "~17.0.0",
     "@types/node": "^20.4.7",
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-firefox-launcher": "~2.1.2",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.2.0"
   }
 }

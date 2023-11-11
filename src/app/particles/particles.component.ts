@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {Engine} from "tsparticles-engine";
 import {loadSlim} from "tsparticles-slim";
 
+
 @Component({
     selector: 'app-particles',
     templateUrl: './particles.component.html',

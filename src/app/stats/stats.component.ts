@@ -33,7 +33,7 @@ export class StatsComponent {
 
     private link(add: boolean) {
         let icon = document.getElementById('github-icon');
-        if (icon != null ) {
+        if (icon != null) {
             if (add) {
                 icon.setAttribute('href', 'https://github.com/strangelookingnerd');
                 icon.setAttribute('target', '_blank');
