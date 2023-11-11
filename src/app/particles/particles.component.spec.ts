@@ -10,8 +10,7 @@ describe('ParticlesComponent', () => {
         await TestBed.configureTestingModule({
             declarations: [ParticlesComponent],
             imports: [NgParticlesModule]
-        })
-            .compileComponents();
+        }).compileComponents();
 
         fixture = TestBed.createComponent(ParticlesComponent);
         component = fixture.componentInstance;

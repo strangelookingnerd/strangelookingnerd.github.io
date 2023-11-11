@@ -7,6 +7,7 @@ module.exports = function (config) {
         frameworks: ['jasmine', '@angular-devkit/build-angular'],
         plugins: [
             require('karma-jasmine'),
+            require('karma-firefox-launcher'),
             require('karma-chrome-launcher'),
             require('karma-headless-chrome-launcher'),
             require('karma-jasmine-html-reporter'),
@@ -34,7 +35,6 @@ module.exports = function (config) {
             ]
         },
         reporters: ['progress', 'kjhtml'],
-        browsers: ['ChromeHeadless'],
         restartOnFileChange: true
     });
 };
