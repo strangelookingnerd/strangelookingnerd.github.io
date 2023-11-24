@@ -5,6 +5,9 @@
     "config:base",
     ":semanticCommitsDisabled"
   ],
+  "schedule": [
+    "every weekend"
+  ],
   "reviewers": [
     "strangelookingnerd"
   ],
