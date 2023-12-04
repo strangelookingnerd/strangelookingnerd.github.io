@@ -44,8 +44,10 @@
 .sloth {
     font-size: 165px;
     margin: 0 !important;
+    user-select: none;
     opacity: 0;
     z-index: 1;
+
 }
 
 .sloth.fade-in {
