@@ -1,6 +1,6 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {ComponentFixture, TestBed} from "@angular/core/testing";
 import {ParticlesComponent} from "./particles.component";
-import {NgParticlesModule} from "ng-particles";
+import {NgxParticlesModule} from "@tsparticles/angular";
 
 describe('ParticlesComponent', () => {
     let component: ParticlesComponent;
@@ -9,7 +9,7 @@ describe('ParticlesComponent', () => {
     beforeEach(async () => {
         await TestBed.configureTestingModule({
             declarations: [ParticlesComponent],
-            imports: [NgParticlesModule]
+            imports: [NgxParticlesModule]
         }).compileComponents();
 
         fixture = TestBed.createComponent(ParticlesComponent);

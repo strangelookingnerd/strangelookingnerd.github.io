@@ -1,13 +1,13 @@
-import {TestBed} from '@angular/core/testing';
-import {AppComponent} from './app.component';
+import {TestBed} from "@angular/core/testing";
+import {AppComponent} from "./app.component";
 import {StatsComponent} from "./stats/stats.component";
 import {ParticlesComponent} from "./particles/particles.component";
-import {NgParticlesModule} from "ng-particles";
+import {NgxParticlesModule} from "@tsparticles/angular";
 
 describe('AppComponent', () => {
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            imports: [NgParticlesModule],
+            imports: [NgxParticlesModule],
             declarations: [AppComponent, ParticlesComponent, StatsComponent],
         }).compileComponents();
     });
