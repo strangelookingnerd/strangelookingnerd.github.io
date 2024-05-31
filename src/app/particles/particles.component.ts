@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
-import {Engine} from "tsparticles-engine";
-import {loadSlim} from "tsparticles-slim";
-
+import {loadSlim} from "@tsparticles/slim";
+import {Engine} from "@tsparticles/engine";
 
 @Component({
     selector: 'app-particles',

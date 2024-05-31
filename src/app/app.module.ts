@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {NgParticlesModule} from 'ng-particles';
+import {NgxParticlesModule} from "@tsparticles/angular";
 
 import {AppComponent} from './app.component';
 import {ParticlesComponent} from './particles/particles.component';
@@ -10,7 +10,7 @@ import {StatsComponent} from './stats/stats.component';
     declarations: [AppComponent, ParticlesComponent, StatsComponent],
     imports: [
         BrowserModule,
-        NgParticlesModule
+        NgxParticlesModule
     ],
     providers: [],
     bootstrap: [AppComponent],
