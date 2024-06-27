@@ -4,13 +4,15 @@ import {NgxParticlesModule} from "@tsparticles/angular";
 
 import {AppComponent} from './app.component';
 import {ParticlesComponent} from './particles/particles.component';
-import {StatsComponent} from './stats/stats.component';
+import {InfosComponent} from './infos/infos.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
-    declarations: [AppComponent, ParticlesComponent, StatsComponent],
+    declarations: [AppComponent, ParticlesComponent, InfosComponent],
     imports: [
         BrowserModule,
-        NgxParticlesModule
+        NgxParticlesModule,
+        NgOptimizedImage
     ],
     providers: [],
     bootstrap: [AppComponent],

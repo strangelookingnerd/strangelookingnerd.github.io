@@ -8,7 +8,7 @@ import {Engine} from "@tsparticles/engine";
     styleUrls: ['./particles.component.css']
 })
 export class ParticlesComponent {
-    particlesUrl = "./assets/particles.json";
+    particlesUrl = "./assets/configs/particles.json";
 
     async particlesInit(engine: Engine): Promise<void> {
         await loadSlim(engine);

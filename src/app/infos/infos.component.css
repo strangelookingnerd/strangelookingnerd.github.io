@@ -1,0 +1,99 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 98vh;
+}
+
+.marketplace {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 50px;
+    user-select: none;
+    opacity: 0;
+    z-index: 1;
+}
+
+.marketplace.fade-in {
+    animation: fadeIn 2s ease 1s forwards;
+}
+
+.marketplace.fade-out {
+    animation: fadeOut 2s ease forwards;
+}
+
+.sloth {
+    cursor: help;
+    font-size: 135px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    transition: opacity 3s ease;
+    z-index: 2;
+}
+
+.sloth:hover {
+    opacity: 1;
+    transition: opacity 3s ease 500ms;
+}
+
+.sloth:not(:hover) {
+    opacity: 0.1;
+    transition: opacity 3s ease;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 50px;
+    user-select: none;
+    opacity: 0;
+    z-index: 1;
+}
+
+.stats.fade-in {
+    animation: fadeIn 2s ease 1s forwards;
+}
+
+.stats.fade-out {
+    animation: fadeOut 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
