@@ -24,8 +24,7 @@
     "tslib": "2.7.0",
     "tsparticles": "3.5.0",
     "@tsparticles/angular": "3.0.0",
-    "@tsparticles/engine": "3.5.0",
-    "zone.js": "0.15.0"
+    "@tsparticles/engine": "3.5.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "18.2.3",
