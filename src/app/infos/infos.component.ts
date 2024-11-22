@@ -1,13 +1,17 @@
 import {Component, OnInit, Renderer2} from '@angular/core';
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
     selector: 'app-infos',
     templateUrl: './infos.component.html',
     styleUrls: ['./infos.component.css'],
+    imports: [
+        NgOptimizedImage
+    ]
 })
 export class InfosComponent implements OnInit {
 
-    constructor(private renderer: Renderer2) {
+    constructor(private readonly renderer: Renderer2) {
     }
 
     ngOnInit(): void {

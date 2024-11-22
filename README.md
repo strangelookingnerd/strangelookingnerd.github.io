@@ -18,4 +18,4 @@
 
 ## What is this?
 
-I'm playing around with Angular and TypeScript on my github.io page.
+I'm playing around with Angular and TypeScript on my GitHub.io page.

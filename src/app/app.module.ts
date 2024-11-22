@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import {bootstrapApplication, BrowserModule} from '@angular/platform-browser';
 import {NgxParticlesModule} from "@tsparticles/angular";
 
 import {AppComponent} from './app.component';
@@ -8,14 +8,19 @@ import {InfosComponent} from './infos/infos.component';
 import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
-    declarations: [AppComponent, ParticlesComponent, InfosComponent],
+    declarations: [],
     imports: [
         BrowserModule,
         NgxParticlesModule,
-        NgOptimizedImage
+        NgOptimizedImage,
+        AppComponent,
+        ParticlesComponent,
+        InfosComponent
     ],
-    providers: [],
-    bootstrap: [AppComponent],
+    providers: []
 })
 export class AppModule {
 }
+
+bootstrapApplication(AppComponent).then(r => {
+});
