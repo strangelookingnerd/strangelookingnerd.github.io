@@ -7,8 +7,7 @@ import {NgxParticlesModule} from "@tsparticles/angular";
 describe('AppComponent', () => {
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            imports: [NgxParticlesModule],
-            declarations: [AppComponent, ParticlesComponent, InfosComponent],
+            imports: [AppComponent, ParticlesComponent, InfosComponent, NgxParticlesModule]
         }).compileComponents();
     });
 

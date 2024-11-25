@@ -8,8 +8,7 @@ describe('ParticlesComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ParticlesComponent],
-            imports: [NgxParticlesModule]
+            imports: [ParticlesComponent, NgxParticlesModule]
         }).compileComponents();
 
         fixture = TestBed.createComponent(ParticlesComponent);

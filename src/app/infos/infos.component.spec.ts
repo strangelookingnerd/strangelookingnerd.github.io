@@ -12,7 +12,7 @@ describe('InfosComponent', () => {
         };
 
         await TestBed.configureTestingModule({
-            declarations: [InfosComponent]
+            imports: [InfosComponent]
         }).compileComponents();
 
         fixture = TestBed.createComponent(InfosComponent);
