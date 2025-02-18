@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "19.1.6",
     "rxjs": "7.8.1",
     "@tsparticles/angular": "3.0.0",
-    "@tsparticles/engine": "3.7.1",
+    "@tsparticles/engine": "3.8.1",
     "@tsparticles/slim": "3.7.1",
     "zone.js": "0.15.0"
   },
