@@ -1,19 +1,19 @@
-import {TestBed} from "@angular/core/testing";
-import {AppComponent} from "./app.component";
-import {InfosComponent} from "./infos/infos.component";
-import {ParticlesComponent} from "./particles/particles.component";
-import {NgxParticlesModule} from "@tsparticles/angular";
+import { TestBed } from "@angular/core/testing";
+import { AppComponent } from "./app.component";
+import { InfosComponent } from "./infos/infos.component";
+import { ParticlesComponent } from "./particles/particles.component";
+import { NgxParticlesModule } from "@tsparticles/angular";
 
-describe('AppComponent', () => {
-    beforeEach(async () => {
-        await TestBed.configureTestingModule({
-            imports: [AppComponent, ParticlesComponent, InfosComponent, NgxParticlesModule]
-        }).compileComponents();
-    });
+describe("AppComponent", () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AppComponent, ParticlesComponent, InfosComponent, NgxParticlesModule],
+    }).compileComponents();
+  });
 
-    it('should create component', () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        const app = fixture.componentInstance;
-        expect(app).toBeTruthy();
-    });
+  it("should create component", () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
 });

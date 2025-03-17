@@ -1,35 +1,39 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import {InfosComponent} from './infos.component';
+import { InfosComponent } from "./infos.component";
 
-describe('InfosComponent', () => {
-    let component: InfosComponent;
-    let fixture: ComponentFixture<InfosComponent>;
+describe("InfosComponent", () => {
+  let component: InfosComponent;
+  let fixture: ComponentFixture<InfosComponent>;
 
-    beforeEach(async () => {
-        (window as any).MarketplaceWidget = {
-            setupMarketplaceWidget: jasmine.createSpy('setupMarketplaceWidget')
-        };
+  beforeEach(async () => {
+    (window as any).MarketplaceWidget = {
+      setupMarketplaceWidget: jasmine.createSpy("setupMarketplaceWidget"),
+    };
 
-        await TestBed.configureTestingModule({
-            imports: [InfosComponent]
-        }).compileComponents();
+    await TestBed.configureTestingModule({
+      imports: [InfosComponent],
+    }).compileComponents();
 
-        fixture = TestBed.createComponent(InfosComponent);
-        component = fixture.componentInstance;
-        fixture.detectChanges();
-    });
+    fixture = TestBed.createComponent(InfosComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
-    afterEach(() => {
-        delete (window as any).MarketplaceWidget;
-    });
+  afterEach(() => {
+    delete (window as any).MarketplaceWidget;
+  });
 
-    it('should create component', () => {
-        expect(component).toBeTruthy();
-    });
+  it("should create component", () => {
+    expect(component).toBeTruthy();
+  });
 
-    it('should create MarketplaceWidget', () => {
-        fixture.detectChanges();
-        expect((window as any).MarketplaceWidget.setupMarketplaceWidget).toHaveBeenCalledWith('card', 24613, '#marketplace-info');
-    });
+  it("should create MarketplaceWidget", () => {
+    fixture.detectChanges();
+    expect((window as any).MarketplaceWidget.setupMarketplaceWidget).toHaveBeenCalledWith(
+      "card",
+      24613,
+      "#pedro-marketplace-info",
+    );
+  });
 });
