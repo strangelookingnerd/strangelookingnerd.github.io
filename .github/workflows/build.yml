@@ -20,3 +20,14 @@ jobs:
       - run: npm run prettier-check
       - run: npm run build
       - run: npm test
+      - name: Configure Pages
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+        uses: actions/configure-pages@v5
+      - name: Upload artifact for deployment
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+        uses: actions/deploy-pages@v4
