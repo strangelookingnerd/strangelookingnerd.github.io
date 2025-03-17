@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "prettier": "npx prettier . --write",
+    "prettier-check": "npx prettier . --check",
+    "prettier-fix": "npx prettier . --write",
     "start": "ng serve -o",
     "build": "ng build",
     "build:ci": "ng build",

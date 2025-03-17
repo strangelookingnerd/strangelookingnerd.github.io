@@ -17,6 +17,6 @@ jobs:
         with:
           node-version: 22
       - run: npm install
-      - run: npm run prettier
+      - run: npm run prettier-check
       - run: npm run build
       - run: npm test
