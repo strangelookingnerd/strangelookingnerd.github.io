@@ -1,7 +1,6 @@
 # strangelookingnerd.github.io
 
 [![build](https://github.com/strangelookingnerd/strangelookingnerd.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/strangelookingnerd/strangelookingnerd.github.io/actions/workflows/build.yml)
-[![deployment](https://github.com/strangelookingnerd/strangelookingnerd.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/strangelookingnerd/strangelookingnerd.github.io/actions/workflows/deploy.yml)
 
 ```
 ##############################################################################################
