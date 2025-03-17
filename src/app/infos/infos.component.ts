@@ -43,8 +43,7 @@ export class InfosComponent implements OnInit {
     if (stats != null) {
       stats.innerHTML = `
             <span>&star; ${data.stargazers_count}</span>
-            <span>&fork; ${data.forks_count}</span>
-            `;
+            <span>&fork; ${data.forks_count}</span>`;
     }
   }
 
