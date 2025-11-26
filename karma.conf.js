@@ -1,7 +1,7 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
-module.exports = function (config) {
+module.exports = function karma(config) {
   config.set({
     basePath: "",
     frameworks: ["jasmine", "@angular-devkit/build-angular"],
@@ -27,7 +27,7 @@ module.exports = function (config) {
       suppressAll: true,
     },
     coverageReporter: {
-      dir: require("path").join(__dirname, "./coverage/strangelookingnerd"),
+      dir: require("node:path").join(__dirname, "./coverage/strangelookingnerd"),
       subdir: ".",
       reporters: [{ type: "html" }, { type: "text-summary" }],
     },
