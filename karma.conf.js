@@ -10,7 +10,6 @@ module.exports = function karma(config) {
       require("karma-firefox-launcher"),
       require("karma-chrome-launcher"),
       require("karma-headless-chrome-launcher"),
-      require("karma-jasmine-html-reporter"),
       require("karma-coverage"),
       require("@angular-devkit/build-angular/plugins/karma"),
     ],
@@ -31,7 +30,7 @@ module.exports = function karma(config) {
       subdir: ".",
       reporters: [{ type: "html" }, { type: "text-summary" }],
     },
-    reporters: ["progress", "kjhtml"],
+    reporters: ["progress"],
     restartOnFileChange: true,
   });
 };
