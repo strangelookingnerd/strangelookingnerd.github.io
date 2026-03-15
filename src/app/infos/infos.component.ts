@@ -15,7 +15,7 @@ export class InfosComponent implements OnInit {
     this.fetchGitHubRepo(
       "strangelookingnerd",
       "fail2ban-map",
-      "https://raw.githubusercontent.com/strangelookingnerd/fail2ban-map/refs/heads/main/public/favicon.ico",
+      "https://raw.githubusercontent.com/strangelookingnerd/fail2ban-map/refs/heads/main/public/assets/favicon.ico",
     ).then();
     this.fetchGitHubRepo(
       "jenkinsci",
