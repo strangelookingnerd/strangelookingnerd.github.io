@@ -8,17 +8,19 @@
   "detectRetina": true,
   "fpsLimit": 120,
   "particles": {
-    "color": {
-      "value": "random",
-      "animation": {
-        "h": {
-          "count": 0,
-          "enable": true,
-          "offset": 0,
-          "speed": 50,
-          "delay": 0,
-          "decay": 0,
-          "sync": false
+    "paint": {
+      "color": {
+        "value": "random",
+        "animation": {
+          "h": {
+            "count": 0,
+            "enable": true,
+            "offset": 0,
+            "speed": 50,
+            "delay": 0,
+            "decay": 0,
+            "sync": false
+          }
         }
       }
     },

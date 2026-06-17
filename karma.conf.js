@@ -4,14 +4,13 @@
 module.exports = function karma(config) {
   config.set({
     basePath: "",
-    frameworks: ["jasmine", "@angular-devkit/build-angular"],
+    frameworks: ["jasmine"],
     plugins: [
       require("karma-jasmine"),
       require("karma-firefox-launcher"),
       require("karma-chrome-launcher"),
       require("karma-headless-chrome-launcher"),
       require("karma-coverage"),
-      require("@angular-devkit/build-angular/plugins/karma"),
     ],
     client: {
       clearContext: false,

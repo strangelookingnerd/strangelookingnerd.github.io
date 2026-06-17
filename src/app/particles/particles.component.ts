@@ -1,7 +1,7 @@
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { NgParticlesService, NgxParticlesModule } from "@tsparticles/angular";
 import { Component } from "@angular/core";
-import { loadSlim } from "@tsparticles/slim";
-import { Engine } from "@tsparticles/engine";
-import { NgxParticlesModule } from "@tsparticles/angular";
+import { Container, Engine } from "@tsparticles/engine";
 
 @Component({
   selector: "app-particles",
@@ -12,7 +12,16 @@ import { NgxParticlesModule } from "@tsparticles/angular";
 export class ParticlesComponent {
   particlesUrl = "./assets/configs/particles.json";
 
-  async particlesInit(engine: Engine): Promise<void> {
-    await loadSlim(engine);
+  constructor(private readonly ngParticlesService: NgParticlesService) {}
+
+  ngOnInit(): void {
+    this.ngParticlesService.init(async (engine) => {
+      console.log(engine);
+      await loadSlim(engine);
+    });
+  }
+
+  particlesLoaded(container: Container): void {
+    console.log(container);
   }
 }
