@@ -1,6 +1,6 @@
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { loadSlim } from "@tsparticles/slim";
 import { NgParticlesService, NgxParticlesModule } from "@tsparticles/angular";
-import { Component, OnInit} from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-particles",
