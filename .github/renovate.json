@@ -4,5 +4,15 @@
   "extends": ["config:recommended", ":semanticCommitsDisabled"],
   "schedule": ["monthly"],
   "reviewers": ["strangelookingnerd"],
-  "labels": ["dependencies"]
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchPackagePrefixes": ["@angular/"],
+      "groupName": "Angular"
+    },
+    {
+      "matchPackagePrefixes": ["@tsparticles/"],
+      "groupName": "tsParticles"
+    }
+  ]
 }
