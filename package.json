@@ -18,7 +18,7 @@
     "@angular/compiler": "22.0.4",
     "@angular/core": "22.0.4",
     "@angular/platform-browser": "22.0.4",
-    "@tsparticles/angular": "4.1.3",
+    "@tsparticles/angular": "4.3.0",
     "@tsparticles/engine": "4.1.3",
     "@tsparticles/slim": "4.1.3",
     "rxjs": "^7.8.2",
