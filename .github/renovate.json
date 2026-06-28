@@ -7,12 +7,12 @@
   "labels": ["dependencies"],
   "packageRules": [
     {
-      "matchPackagePrefixes": ["@angular/"],
-      "groupName": "Angular"
+      "groupName": "Angular",
+      "matchPackageNames": ["@angular/{/,}**"]
     },
     {
-      "matchPackagePrefixes": ["@tsparticles/"],
-      "groupName": "tsParticles"
+      "groupName": "tsParticles",
+      "matchPackageNames": ["@tsparticles/{/,}**"]
     }
   ]
 }
