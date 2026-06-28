@@ -21,8 +21,8 @@
     "@tsparticles/angular": "4.3.0",
     "@tsparticles/engine": "4.3.0",
     "@tsparticles/slim": "4.3.0",
-    "rxjs": "^7.8.2",
-    "zone.js": "^0.16.2"
+    "rxjs": "7.8.2",
+    "zone.js": "0.16.2"
   },
   "devDependencies": {
     "@angular/build": "22.0.4",
