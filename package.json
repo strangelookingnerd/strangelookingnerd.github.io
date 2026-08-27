@@ -42,7 +42,7 @@
   },
   "overrides": {
     "localtunnel": {
-      "axios": "1.19.0"
+      "axios": "1.20.0"
     }
   },
   "allowScripts": {
