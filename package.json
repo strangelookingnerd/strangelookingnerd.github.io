@@ -50,6 +50,7 @@
     "@parcel/watcher": true,
     "esbuild": true,
     "lmdb": true,
-    "msgpackr-extract": true
+    "msgpackr-extract": true,
+    "sleep": true
   }
 }
