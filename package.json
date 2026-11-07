@@ -14,10 +14,10 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "22.2.4",
-    "@angular/compiler": "22.2.4",
-    "@angular/core": "22.2.4",
-    "@angular/platform-browser": "22.2.4",
+    "@angular/common": "22.2.5",
+    "@angular/compiler": "22.2.5",
+    "@angular/core": "22.2.5",
+    "@angular/platform-browser": "22.2.5",
     "@tsparticles/angular": "4.5.1",
     "@tsparticles/engine": "4.5.1",
     "@tsparticles/slim": "4.5.1",
@@ -25,9 +25,9 @@
     "zone.js": "0.16.3"
   },
   "devDependencies": {
-    "@angular/build": "22.2.5",
-    "@angular/cli": "22.2.5",
-    "@angular/compiler-cli": "22.2.4",
+    "@angular/build": "22.2.6",
+    "@angular/cli": "22.2.6",
+    "@angular/compiler-cli": "22.2.5",
     "@types/jasmine": "7.0.0",
     "istanbul-lib-instrument": "6.0.3",
     "jasmine-core": "7.0.2",
